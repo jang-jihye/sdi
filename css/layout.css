@@ -62,10 +62,10 @@
 
   .box {flex-direction: column; justify-content: space-evenly;}    
   .box .l-box {width: 90%; height: 300px; padding: 25px;}
-  .box .l-box .text-box {height: 150px;}
+  .box .l-box .text-box {height: 155px;}
   .box .l-box .text-box strong {font-size: 34px;}
   .box .l-box .text-box p {font-size:24px;}
-  .box .l-box .text-box span {font-size:19px; line-height: 25px;}
+  .box .l-box .text-box span {font-size:19px; line-height: 21px;}
   .box .l-box .btn-box button {width: 100%; max-width:590px; font-size: 19px;}
   .box .l-box .btn-box img {padding-left:20px; width: 40%;}
   .box .r-box {width: 90%; height: 300px; padding: 25px;}
@@ -91,7 +91,11 @@
   .header .nav .slide.open p {font-size: 26px;}
   .header .nav .slide.open ul li a {font-size: 26px;}
 }
-/* mobile(~370px) */
-@media screen and (max-width: 370px) {
-
+/* mobile(~380px) */
+@media screen and (max-width: 380px) {
+  .box .l-box {height: 256px;}
+  .box .l-box .text-box span {font-size: 16px; line-height: 21px;}
+  .box .r-box {height: 256px;}  
+  .box .l-box .btn-box button {height: 46px;}
+  .box .r-box .list-box ul li a {height: 41px; line-height: 41px;}
 }
