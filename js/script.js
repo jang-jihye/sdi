@@ -53,11 +53,11 @@ $(document).ready(function () {
     });
 
     // dim
-    $('.dim').click(function () {
-        var c = $(this).siblings('div');
-        if(c.hasClass('open')) {
-            $(this).siblings('.slide').removeClass('open');
-            $('.dim').removeClass('on');
-        }
-    });
+//     $('.dim').click(function () {
+//         var c = $(this).siblings('div');
+//         if(c.hasClass('open')) {
+//             $(this).siblings('.slide').removeClass('open');
+//             $('.dim').removeClass('on');
+//         }
+//     });
 });
