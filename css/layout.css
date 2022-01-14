@@ -78,8 +78,6 @@
   .box .r-box .list-box ul li span {font-size: 13px;}
 
   .sub-box .privacybox .check {justify-content: center;}
-
-  .sub-box .textbox p span {display: block;}
 }
 
 @media screen and (max-width: 500px) {
@@ -95,9 +93,6 @@
   .box .r-box .text-box a {font-size: 14px;}
   .box .r-box .list-box ul li a {font-size: 14px;}
   .box .r-box .list-box ul li span {font-size: 12px;}
-
-  .sub-box .textbox p {font-size: 16px;}
-  .sub-box .privacybox .content span {font-size: 14px;}
 }
 
 @media screen and (max-width: 380px) {
