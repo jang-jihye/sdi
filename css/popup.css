@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+
+/* 팝업 통합 셋팅 */
+.popup-set {background-color:#FFFFFF; box-sizing:border-box; padding:15px 20px 25px;}
+.popup-set h5 {width:100%; height:50px;box-sizing:border-box;color:#FF0000;font-size:22px;text-align:center;font-weight:700;padding:5px 0 10px;margin-bottom:20px;border-bottom:1px solid #ededed}
+.popup-in {box-sizing:border-box;}
+
+.error-pop {width:100%;height:auto;}
+.error-pop::after{content:"";display: block;clear: both;}
+.error-pop .sub-box {background-color:#FFFFFF; padding:0;}
+
+.error-pop-close{float:right;display: block;width: 26px; height: 26px;text-align: center; position:relative;}
+.error-pop-close:after {content:""; display:block; position:absolute; top:calc(50% - 1px); left:0; width:100%; height:2px; background-color:#000000; transform:rotate(45deg);}
+.error-pop-close:before {content:""; display:block; position:absolute; top:calc(50% - 1px); left:0; width:100%; height:2px; background-color:#000000; transform:rotate(-45deg);}
