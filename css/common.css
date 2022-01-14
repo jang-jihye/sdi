@@ -39,7 +39,7 @@
 .box .r-box .list-box ul li:hover a {color:#000000; text-decoration:underline;}
 .box .r-box .list-box ul li span {font-size:14px; color:rgb(84, 85, 85); position:relative; z-index:2;}
 .box .r-box .list-box ul li:hover span {color:#000000;}
-/* .box .r-box .list-box ul li:nth-child(2) span {letter-spacing:-0.05rem;} */
+.box .r-box .list-box ul li:nth-child(2) span {letter-spacing:-0.05rem;}
 .box .r-box .btn-box button {background-color:rgb(28, 41, 80); color:#FFFFFF; font-size:20px; width:100%; max-width:540px; height:60px;}
 .box .r-box .btn-box img {padding-left:20px;}
 
