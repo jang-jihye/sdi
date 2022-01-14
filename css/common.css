@@ -31,7 +31,7 @@
 .box .r-box .text-box {display:block; width:100%;}
 .box .r-box .text-box strong {display:inline-block; vertical-align:middle; font-weight:700; font-size:36px; margin-right:15px;}
 .box .r-box .text-box span {display:inline-block; vertical-align:-10px; font-size:17px; color:rgb(84, 85, 85);}
-.box .r-box .text-box a {display:block; float:right; margin-top:17px; font-size:20px; color:#000000;}
+.box .r-box .text-box a {display:block; float:right; margin-top:18px; font-size:20px; color:#000000;}
 .box .r-box .list-box {display:block;}
 .box .r-box .list-box ul {border-top: 2px solid rgb(3, 0, 0);}
 .box .r-box .list-box ul li {padding:0 10px; border-bottom:1px solid rgb(118, 119, 119); display:flex; flex:1 1 auto; justify-content: space-between; align-items: center; position:relative; overflow:hidden;}
