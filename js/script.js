@@ -45,11 +45,19 @@ $(document).ready(function () {
         $('.menu').not(this).children().next().children('img').attr('src','./images/plus.png');
     });
 
-    // index.html 모바일 햄버거
+    // 모바일 햄버거 + 슬라이드메뉴바
     $('.mNav').click(function () {
         $(this).toggleClass('on');
         $(this).siblings('.slide').toggleClass('open');
         $(this).siblings('.dim').toggleClass('on');
     });
-    
+
+    // dim
+    $('.dim').click(function () {
+        var c = $(this).siblings('div');
+        if(c.hasClass('open')) {
+            $(this).siblings('.slide').removeClass('open');
+            $('.dim').removeClass('on');
+        }
+    });
 });
