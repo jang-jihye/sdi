@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     // notice.html AccordionMenu 구현
-    $(".content").hide();
+    $(".board-cont li .content").hide();
 
     $('.menu').click(function () {
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
         $(this).siblings('.dim').toggleClass('on');
     });
 
-    // dim
+    //dim
     $('.dim').click(function () {
         var c = $(this).siblings('div');
         if(c.hasClass('open')) {
