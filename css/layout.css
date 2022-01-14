@@ -42,8 +42,8 @@
 @media screen and (max-width: 768px) {
     
   .header .nav .mNav {display: block;}
-  .header .nav .slide {position: absolute; z-index: 99; top: 0; right: 0; width: 0; height: 120%; background-color: #1C2950; transition: all .3s;}
-  .header .nav .slide.open {position: fixed; z-index: 99; top: 0; right: 0; width: 65%; height: 120%; background-color: #1C2950; transition: all .3s;}
+  .header .nav .slide {display: none; position: absolute; z-index: 99; top: 0; right: 0; width: 0; height: 120%; background-color: #1C2950; transition: all .3s;}
+  .header .nav .slide.open {display: block; position: fixed; z-index: 99; top: 0; right: 0; width: 65%; height: 120%; background-color: #1C2950; transition: all .3s;}
   .header .nav .slide.open h2 {width: 170px; height: 22px; position: absolute; top: 90px; left: 15%; background: url(../images/logo2.png) no-repeat;}
   .header .nav .slide.open p {display: block; position: absolute; left: 15%; top: 112px; color: #fff; margin-top: 16px; font-size: 28px;}
   .header .nav .slide.open ul {display: flex; width: 100%; flex-direction: column; position: absolute; top: 220px; border-top: 1px solid rgba(255, 255, 255, 0.5); padding-top: 16px;}
