@@ -36,8 +36,6 @@
   .footer .rignt .copyright {display: block; text-align: center;}
   .footer .rignt .copyright p {font-size: 12px;}
   .footer .rignt .copyright p a {display: block; margin-right: 0; padding-bottom: 10px; font-size: 13px;}
-
-  .sub-box .privacybox .check {justify-content: center;}
 }
 
 /* mobile(~768px) */
