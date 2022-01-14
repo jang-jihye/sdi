@@ -62,7 +62,7 @@
 .sub-box .privacybox .content {height:300px; overflow:auto; overflow-x:hidden; padding:20px 20px 0 20px; box-sizing:border-box; }
 .sub-box .privacybox .content span {font-size:16px; color:rgb(118, 119, 119); line-height:28px;}
 .sub-box .privacybox .check {height:50px; border-top:1px solid rgb(228, 228, 228); padding:0 20px; box-sizing:border-box; display:flex; justify-content:flex-start; align-items:center;}
-.sub-box .privacybox .check label {margin-right:20px; color:rgb(171, 170, 170); font-size:14px;}
+.sub-box .privacybox .check label {margin:0 20px; color:rgb(171, 170, 170); font-size:14px;}
 .sub-box .privacybox .check label span {display:inline-block; margin-left:5px; vertical-align:middle;}
 .sub-box .privacybox .check input[type=radio] {background: url(../images/icon2.png) no-repeat; -webkit-appearance:none; width:20px; height:20px; vertical-align:middle;}
 .sub-box .privacybox .check input[type=radio]:checked {background:url(../images/icon1.png) no-repeat;}
