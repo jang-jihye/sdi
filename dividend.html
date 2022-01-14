@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <!--css-->
         
     <!--js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./js/jquery.easing.js"></script>
     <script src="./js/jquery.mvs.js"></script>
+    <script src="./js/script.js"></script>
     <!--js-->
 </head>
 
@@ -25,12 +27,20 @@
     <header class="header">
         <div class="nav">
             <h1><a href="index.html"><img src="./images/logo.png" alt=""></a></h1>
-            <ul>
-                <li class="active"><a href="dividend.html">배당금조회</a></li>
-                <li><a href="faq.html">문의</a></li>
-                <li><a href="notice.html">공지</a></li>
-            </ul>
-        </div>
+
+            <!-- 모바일 햄버거 -->
+            <a class="mNav" href="#"><span></span></a>
+            <div class="slide">
+                <h2></h2>
+                <p>배당조회 서비스</p>
+                <ul>
+                    <li class="active"><a href="dividend.html">배당금조회</a></li>
+                    <li><a href="faq.html">문의</a></li>
+                    <li><a href="notice.html">공지</a></li>
+                </ul>
+            </div>
+            <div class="dim"></div>
+        </div> 
     </header>
 
     <div class="sub-bg">
@@ -47,14 +57,16 @@
             </div>
         </div>
         <div class="textbox">
-            <p class="mvs fadeShotUp" data-mvs-delay="0.1s">온라인에서의 익명 사용자로 인한 피해방지 및 주주정보를 특정하기 위해 사용자에 대한 실명제를 시행하고 있습니다.<br>
-            사용자가 입력하는 정보는 동의 없이 공개/수정되지 않습니다.</p>
+            <p class="mvs fadeShotUp" data-mvs-delay="0.1s"><span>온라인에서의 익명 사용자로 인한 피해방지 및 주주정보를 특정하기 위해</span>
+            <span>사용자에 대한 실명제를 시행하고 있습니다.</span></p>
+            <p class="mvs fadeShotUp" data-mvs-delay="0.1s"><span>사용자가 입력하는 정보는 동의 없이 공개/수정되지 않습니다.</span></p>
         </div>
         <div class="privacybox mvs fadeShotUp" data-mvs-delay="0.2s">
             <div class="content">
                 <span>
                     〈 개인정보 수집목적/수집항목/이용목적 〉<br>
-                    1. 배당금 조회 서비스는 최소한의 개인정보만을 수집합니다. 배당금 조회서비스 제공을 위하여 주주 본인임을 확인하기 위한 목적으로 개인정보 수집 이용 동의를 구합니다.<br>
+                    1. 배당금 조회 서비스는 최소한의 개인정보만을 수집합니다.<br>
+                    배당금 조회서비스 제공을 위하여 주주 본인임을 확인하기 위한 목적으로 개인정보 수집 이용 동의를 구합니다.<br>
                     2. 수집하려는 개인정보 항목 : 이름, 전화번호, 생년월일, 성별<br>
                     (위 정보가 모두 동일하여 위 정보만으로 주주본인을 특정할 수 없는 경우 추가정보)<br>
                     배당금 지급계좌 개설은행/증권사명, 도로명 기준으로 우편번호 수집(상세주소 제외)<br>
