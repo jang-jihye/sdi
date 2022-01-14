@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSUNG SDI 배당조회 서비스</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/jbox.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <!--css-->
+
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.easing.js"></script>
+    <script src="./js/jquery.mvs.js"></script>
+    <script src="./js/jquery.jbox.js"></script>
+    <script src="./js/script.js"></script>
+    <!--js-->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav">
+            <h1><a href="index.html"><img src="./images/logo.png" alt=""></a></h1>
+            <ul>
+                <li class="active"><a href="dividend.html">배당금조회</a></li>
+                <li><a href="faq.html">문의</a></li>
+                <li><a href="notice.html">공지</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="sub-bg">
+        <div class="top">
+            <h1 class="mvs fadeShotUp">배당금 조회</h1>
+        </div>
+    </div>
+
+    <div class="sub-box error">
+		<div class="top-box">
+			<h1>배당금 조회 오류</h1>
+			<img src="./images/middle.png" alt="">
+			<div class="textbox">
+				<h2>일치하는 주주정보가 존재하지 않습니다.</h2>
+				<p>서비스 이용에 불편을 드려 죄송합니다.</p>
+				<p>보유 주식정보에 대해 삼성SDI 고객센터에 문의하시기 바랍니다.</p>
+				<p>감사합니다.</p>
+			</div>
+		</div>
+		<div class="btnbox">
+			<button class="ok" type="button" onclick="location.href='index.html'"><span>홈으로</span></button>
+			<button class="can er-pop" type="button"><span>이전페이지</span></button>
+		</div>
+	</div>
+
+    <div id="popupbox" style="display:none;">
+        <div class="popup-set error-pop">
+            <h5>배당금 조회 오류 <a href="#none" class="error-pop-close close-pop"><i class="fa fa-times"></i></a></h5>
+            <div class="popup-in">                        
+                <div class="inner">
+					<div class="sub-box error">
+						<div class="top-box">
+							<img src="./images/middle.png" alt="">
+							<div class="textbox">
+								<h2>일치하는 주주정보가 존재하지 않습니다.</h2>
+								<p>서비스 이용에 불편을 드려 죄송합니다.</p>
+								<p>보유 주식정보에 대해 삼성SDI 고객센터에 문의하시기 바랍니다.</p>
+								<p>감사합니다.</p>
+							</div>
+						</div>            
+					</div>
+				</div>
+            </div>
+			<div class="btnbox">
+				<button class="ok" type="button" onclick="location.href='index.html'"><span>홈으로</span></button>
+				<button class="can close-pop" type="button"><span>닫기</span></button>
+			</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3 class="logo"><img src="./images/logo.png" alt=""></h3>
+        <div class="rignt">
+            <div class="copyright">
+                <p><a href="#">개인정보처리방침</a> 경기도 용인시 기흥구 공세로 150-20 [17084]</p>
+                <p>COPYRIGHT 2021 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+	
+    <script>    
+        
+        $(document).ready(function(){
+           findId = new jBox('Modal', {attach:'.er-pop',content:$('.error-pop'), blockScroll: true,overlay: true,closeButton: false,zIndex: 9999})
+           $('.close-pop').click(function(){findId.close()});
+       })
+    </script>
+    </div>
+
+</body>
+
+</html>

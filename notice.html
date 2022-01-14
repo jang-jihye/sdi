@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSUNG SDI 배당조회 서비스</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--css-->
+
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.easing.js"></script>
+    <script src="./js/jquery.mvs.js"></script>
+    <script src="./js/script.js"></script>
+    <!--js-->
+</head>
+
+<body>
+	<script>
+	var url = new URL(window.location.href);
+	var urlParams = url.searchParams
+	var las = urlParams.get('page')
+	var open = parseFloat(las)-1;
+	$(document).ready(function(){
+		if (las < 0){
+		}else{
+			$('.noticebox ul li').eq(open).addClass('open');
+			$('.noticebox ul li').eq(open).find('.content').slideDown(0);
+			$('html, body').stop().animate({scrollTop: $('.noticebox ul li').eq(open).offset().top},0);
+		}
+		console.log(open)
+	})
+	</script>
+    <header class="header">
+        <div class="nav">
+            <h1><a href="index.html"><img src="./images/logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="dividend.html">배당금조회</a></li>
+                <li><a href="faq.html">문의</a></li>
+                <li class="active"><a href="notice.html">공지</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="board-bg">
+        <div class="top-board">
+            <h1 class="mvs fadeShotUp">공지</h1>
+        </div>
+    </div>
+
+    <div class="sub-box" id="board">
+        <div class="noticebox">
+            <ul class="board-cont">
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">정기점검 안내('21/12/8 21:00~)</a>
+                            <p>2021-12-07</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>              
+                </li>
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">'21년 3분기 배당내역 조회 종료 예정일 안내</a>
+                            <p>2021-12-03</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>                    
+                </li>
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">'21년 3분기 배당 조회를 위한 Web-Service 개시 예정일 안내('21/11/10~)</a>
+                            <p>2021-11-03</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>    
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>                
+                </li>
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">정기점검 안내('21/9/8 21:00~)</a>
+                            <p>2021-09-07</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>                    
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">'21년 2분기 배당내역 조회 종료 예정일 안내</a>
+                            <p>2021-09-06</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>                 
+                </li>
+                <li class="">
+                    <div class="menu">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="">'21년 2분기 배당 Web Service 개시('21/8/11) 준비를 위한 시스템 점검 안내</a>
+                            <p>2021-08-06</p>
+                        </div>
+                        <div class="right">
+                            <img src="./images/plus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>안정적인 서비스 제공을 위해 시스템 점검 작업이 진행될 예정입니다.<br>
+                        점검 시간 동안에는 홈페이지 열람이 불가하며, 점검 완료후 이용이 종료될 예정이니 참고하시기 바랍니다.
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3 class="logo"><img src="./images/logo.png" alt=""></h3>
+        <div class="rignt">
+            <div class="copyright">
+                <p><a href="#">개인정보처리방침</a> 경기도 용인시 기흥구 공세로 150-20 [17084]</p>
+                <p>COPYRIGHT 2021 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
