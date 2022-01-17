@@ -15,7 +15,7 @@
 .footer .rignt .copyright p a {color: rgb(76, 125, 188); font-weight:700; margin-right:10px;}
 
 /* Main */
-.box {width: 100%; height: calc(100vh - 70px); display: flex; justify-content: center; align-items: center; background-image: url(../images/background.jpg); background-repeat: no-repeat; background-size: cover; position:relative;}
+.box {width: 100%; height: calc(100vh - 70px); display: flex; justify-content: center; align-items: center; background-image: url(../images/background.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; position:relative;}
 .box:after {content:""; display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:1; background:url('../images/pattern2.png') repeat rgba(0,0,0,0.45);}
 
 .box .l-box {width:50%; max-width:640px; height:410px; padding:50px; box-sizing:border-box; background-color:rgba(28, 41, 80, 1); display:flex; flex-direction:column; justify-content:space-between; position:relative; z-index:2;}
