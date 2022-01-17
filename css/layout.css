@@ -61,14 +61,14 @@
   .footer .rignt .copyright p a {display: block; margin-right: 0; padding-bottom: 10px; font-size: 13px;}
 
   .box {flex-direction: column; justify-content: space-evenly;}    
-  .box .l-box {width: 90%; height: 270px; padding: 25px;}
-  .box .l-box .text-box {height: 140px;}
+  .box .l-box {width: 90%; height: 300px; padding: 25px;}
+  .box .l-box .text-box {height: 150px;}
   .box .l-box .text-box strong {font-size: 34px;}
   .box .l-box .text-box p {font-size:24px;}
   .box .l-box .text-box span {font-size:19px; line-height: 19px;}
   .box .l-box .btn-box button {width: 100%; max-width:590px; font-size: 19px;}
   .box .l-box .btn-box img {padding-left:20px; width: 40%;}
-  .box .r-box {width: 90%; height: 270px; padding: 25px;}
+  .box .r-box {width: 90%; height: 300px; padding: 25px;}
   .box .r-box .text-box strong {font-size: 30px;}
   .box .r-box .text-box span {font-size: 15px; vertical-align: -6px;}
   .box .r-box .text-box a {font-size: 14px; margin-top: 10px;}
@@ -95,8 +95,13 @@
 
 @media screen and (max-width: 380px) {
   .box .l-box {height: 256px;}
-  .box .l-box .text-box span {font-size: 16px; line-height: 21px;}
-  .box .r-box {height: 256px;}  
+  .box .l-box .text-box strong {font-size: 27px;}
+  .box .l-box .text-box p {font-size: 22px;}
+  .box .l-box .text-box span {font-size: 14px; line-height: 19px;}
   .box .l-box .btn-box button {height: 46px;}
-  .box .r-box .list-box ul li a {height: 41px; line-height: 41px;}
+
+  .box .r-box {height: 256px;} 
+  .box .r-box .text-box strong {font-size: 25px; margin-right: 7px;}
+  .box .r-box .list-box ul li a {font-size: 13px; height: 41px; line-height: 41px;}
+  .box .r-box .list-box ul li span {font-size: 11px;}
 }
